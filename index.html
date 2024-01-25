@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+           @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+        * {
+            font-family: 'Poppins', sans-serif;
+            /* color: white; */
+          }
+        
+        body
+        {
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            background-color: yellow;
+        }
+        .animated-div {
+            height: 40vh;
+            width: 80%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+          
+        }
+        .animated-div span
+        {
+            animation-name: animate-name;
+            opacity: 0;
+            animation-duration: 1s;
+            font-size: 35px;
+            font-weight: 500;
+            letter-spacing: 10px; 
+            animation-fill-mode: forwards;
+        }
+        .animated-div span:nth-child(1)
+        {
+            animation-delay: 0.5s;
+            color: rgb(3, 2, 3);
+        }
+        .animated-div span:nth-child(2)
+        {
+            animation-delay: 1s;
+        }
+        .animated-div span:nth-child(3)
+        {
+            animation-delay: 1.5s;
+        }
+        .animated-div span:nth-child(4)
+        {
+            animation-delay: 2s;
+        }
+        .animated-div span:nth-child(5)
+        {
+            animation-delay: 2.5s;
+        }
+       h2
+       {
+        position: relative;
+        top: -15vh;
+        animation-name: dev-text;
+        animation-duration: 2s;
+        animation-delay: 2s;
+        opacity: 0;
+        animation-fill-mode: forwards;
+       }
+       @keyframes dev-text
+       {
+        0%
+        {
+            opacity: 0;
+            transform: translate(-1000px);
+        }
+        100%
+        {
+            opacity: 1;
+            text-decoration: underline;
+        }
+       }
+
+      
+        @keyframes animate-name {
+         
+            0%
+            {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            100%
+            {
+                opacity: 1;
+              
+            }
+
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="animated-div">
+        <span>S</span>
+        <span>W</span>
+        <span>A</span>
+        <span>M</span>
+        <span>I</span>
+    </div>
+    <h2>The Frontend Dev</h2>
+</body>
+</html>
